@@ -1,0 +1,16 @@
+cradle:
+  multi:
+    # - path: "ignore/"
+    #   config: {cradle: {none: }}
+
+    - path: "src"
+      config: {cradle: {cabal: {component: "lib:hoice-pcsp"}}}
+
+    - path: "app"
+      config: {cradle: {cabal: {component: "hoice-pcsp:hoice-pcsp"}}}
+
+    - path: "test"
+      config: {cradle: {cabal: {component: "hoice-pcsp:hoice-pcsp-test"}}}
+
+    - path: "bench"
+      config: {cradle: {cabal: {component: "hoice-pcsp:hoice-pcsp-bench"}}}
